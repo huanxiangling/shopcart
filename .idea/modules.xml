@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/shopcart_api/shopcart_api.iml" filepath="$PROJECT_DIR$/shopcart_api/shopcart_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopcart_service/shopcart_service.iml" filepath="$PROJECT_DIR$/shopcart_service/shopcart_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/shopcart_web/shopcart_web.iml" filepath="$PROJECT_DIR$/shopcart_web/shopcart_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
 </project>

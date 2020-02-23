@@ -6,7 +6,9 @@
 <html>
   <head>
   	<meta charset="UTF-8">
-    <style type="text/css">
+	  <title>用户登录</title>
+	  <link rel="stylesheet" href="${path}/css/bootstrap.min.css">
+	  <style type="text/css">
 	
       body{  background-image:url("${path}/image/2.jpg");background-repeat:repeat }
 	  
@@ -21,23 +23,23 @@
       .tableBorder1{width:97%;border: 1px; background-color: #AFB2C4;}
 	  
     </style>
-	  <script src="${pageContext.request.contextPath}js/jquery-3.4.1.min.js"></script>
+	  <script src="${pageContext.request.contextPath}/js/jquery-3.4.1.min.js"></script>
 	  <script>
           function login() {
               $.ajax({
-                  url:"${pageContext.request.contextPath}/user/login",
-                  type:"POST",
-                  datatype:"JSON",
-                  data:$("#loginForm").serialize(),
-                  success:function (data) {
-                      if (data!=null&data!=""){
-                          $("#msg").html("<span style='color: red;' class='error'>"+data+"</span>")
-                      }else {
+                  url: "${pageContext.request.contextPath}/user/login",
+                  type: "POST",
+                  datatype: "JSON",
+                  data: $("#loginForm").serialize(),
+                  success: function (data) {
+                      if (data != null & data != "") {
+                          $("#msg").html("<span style='color: red;' class='error'>" + data + "</span>")
+                      } else {
                           location.href = "${pageContext.request.contextPath}/view/main.jsp";
                       }
                   }
 
-              })
+              });
           }
 	  </script>
   </head>
@@ -66,7 +68,7 @@
 		    <td valign="middle" class="tablebody1"><input name="password" type="password"> &nbsp; </td>
 		  </tr>
 		  <tr>
-		    <td class="tablebody2" valign="middle" colspan=2 align=center><input onclick="login()" type="submit" value="登 录"></td>
+		    <td class="tablebody2" valign="middle" colspan=2 align=center><input class="btn btn-primary" onclick="login()" type="submit" value="登 录"></td>
 		  </tr>
 		</table>
 

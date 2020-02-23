@@ -1,5 +1,5 @@
-<%@ page pageEncoding="UTF-8" session="false"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page pageEncoding="UTF-8" contentType="text/html; utf-8" session="false" isELIgnored="false" %>
+<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>--%>
 <%
  	request.setAttribute("path", request.getContextPath());
 %>
@@ -13,8 +13,6 @@
      <img src="${path}/image/zgc_px.jpg" align="middle" class="f"/>
      <span>欢迎访问我的购物网站</span>
      <hr/>
-     
- 	<!--  Menu Bar  -->
    <center>
    <div class="d">
      <a href="${path }/a/QueryProductAction"><img src="${path}/image/index.gif"/></a>
